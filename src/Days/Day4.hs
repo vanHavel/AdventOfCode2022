@@ -1,7 +1,5 @@
 module Days.Day4 where
 
-import Data.Composition
-import Data.List.Split
 import Data.Maybe
 
 import Utils
@@ -12,11 +10,6 @@ intersect :: Interval -> Interval -> Maybe Interval
 (l1, r1) `intersect` (l2, r2) | l > r     = Nothing 
                               | otherwise = Just (l, r)
     where (l, r) = (max l1 l2, min r1 r2)
-
-splittingParse :: String -> (String -> a) -> String -> (a, a)
-splittingParse splitter partParser s = 
-    let [left, right] = splitOn splitter s 
-    in both partParser (left, right)
 
 parseInterval :: String -> Interval
 parseInterval = splittingParse "-" read 

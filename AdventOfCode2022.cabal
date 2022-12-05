@@ -25,7 +25,7 @@ executable AdventOfCode2022
 
     -- Modules included in this executable, other than Main.
     other-modules:    Switcher, Utils, 
-                      Days.Day1, Days.Day2, Days.Day3, Days.Day4
+                      Days.Day1, Days.Day2, Days.Day3, Days.Day4, Days.Day5
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
