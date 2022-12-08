@@ -25,10 +25,11 @@ executable AdventOfCode2022
 
     -- Modules included in this executable, other than Main.
     other-modules:    Switcher, Utils, 
-                      Days.Day1, Days.Day2, Days.Day3, Days.Day4, Days.Day5, Days.Day6
+                      Days.Day1, Days.Day2, Days.Day3, Days.Day4, Days.Day5, Days.Day6,
+                      Days.Day7
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.17.0.0, composition ^>=1.0.2.2, split ^>= 0.2.3.5
+    build-depends:    base ^>=4.17.0.0, composition ^>=1.0.2.2, split ^>= 0.2.3.5, containers ^>= 0.6.6
     hs-source-dirs:   app,src
     default-language: Haskell2010
