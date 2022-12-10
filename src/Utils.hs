@@ -21,3 +21,9 @@ splittingParse splitter partParser s =
 
 inBounds :: ((Int, Int), (Int, Int)) -> (Int, Int) -> Bool 
 inBounds ((ly, lx), (uy, ux)) (y, x) = lx <= x && x <= ux && ly <= y && y <= uy
+
+every :: Int -> [a] -> [a]
+every k = every' k 1
+  where every' _ _ [] = []
+        every' k 1 (x:xs) = x:(every' k k xs)
+        every' k i (x:xs) = every' k (i-1) xs
