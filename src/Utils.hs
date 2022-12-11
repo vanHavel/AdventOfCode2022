@@ -27,3 +27,6 @@ every k = every' k 1
   where every' _ _ [] = []
         every' k 1 (x:xs) = x:(every' k k xs)
         every' k i (x:xs) = every' k (i-1) xs
+
+self :: (a -> a -> a) -> a -> a
+self f x = f x x
