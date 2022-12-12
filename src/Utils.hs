@@ -19,9 +19,6 @@ splittingParse splitter partParser s =
     let [left, right] = splitOn splitter s 
     in both partParser (left, right)
 
-inBounds :: ((Int, Int), (Int, Int)) -> (Int, Int) -> Bool 
-inBounds ((ly, lx), (uy, ux)) (y, x) = lx <= x && x <= ux && ly <= y && y <= uy
-
 every :: Int -> [a] -> [a]
 every k = every' k 1
   where every' _ _ [] = []

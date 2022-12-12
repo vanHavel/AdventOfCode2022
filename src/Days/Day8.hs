@@ -5,6 +5,7 @@ module Days.Day8 where
 import Data.Array
 import Data.List
 
+import Grid
 import Utils
 
 run :: String -> (String, String)
