@@ -13,6 +13,7 @@ import Days.Day10 (run)
 import Days.Day11 (run)
 import Days.Day12 (run)
 import Days.Day13 (run)
+import Days.Day14 (run)
 
 runDay :: Int -> String -> (String, String)
 runDay 1 = Days.Day1.run
@@ -28,3 +29,4 @@ runDay 10 = Days.Day10.run
 runDay 11 = Days.Day11.run
 runDay 12 = Days.Day12.run
 runDay 13 = Days.Day13.run
+runDay 14 = Days.Day14.run
