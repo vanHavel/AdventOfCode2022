@@ -24,10 +24,10 @@ executable AdventOfCode2022
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
-    other-modules:    Switcher, Utils, Grid, AStar,
+    other-modules:    Switcher, Utils, Grid, AStar, Interval,
                       Days.Day1,  Days.Day2,  Days.Day3,  Days.Day4,  Days.Day5,  Days.Day6,
                       Days.Day7,  Days.Day8,  Days.Day9,  Days.Day10, Days.Day11, Days.Day12,
-                      Days.Day13, Days.Day14
+                      Days.Day13, Days.Day14, Days.Day15
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:

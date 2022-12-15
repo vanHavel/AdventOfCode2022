@@ -20,3 +20,6 @@ inBounds ((ly, lx), (uy, ux)) (y, x) = lx <= x && x <= ux && ly <= y && y <= uy
 
 posWhere :: (Ix i) => (e -> Bool) -> Array i e -> [i]
 posWhere f = map fst . filter (f . snd) . assocs
+
+manhattan :: Position -> Position -> Int 
+manhattan (y1, x1) (y2, x2) = abs (y1 - y2) + abs (x1 - x2)

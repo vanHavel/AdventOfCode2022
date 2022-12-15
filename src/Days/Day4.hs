@@ -2,14 +2,8 @@ module Days.Day4 where
 
 import Data.Maybe
 
+import Interval
 import Utils
-
-type Interval = (Int, Int)
-
-intersect :: Interval -> Interval -> Maybe Interval
-(l1, r1) `intersect` (l2, r2) | l > r     = Nothing 
-                              | otherwise = Just (l, r)
-    where (l, r) = (max l1 l2, min r1 r2)
 
 parseInterval :: String -> Interval
 parseInterval = splittingParse "-" read 
