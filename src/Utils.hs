@@ -27,3 +27,6 @@ every k = every' k 1
 
 self :: (a -> a -> a) -> a -> a
 self f x = f x x
+
+mean :: [Int] -> Int 
+mean xs = div (sum xs) (length xs)
