@@ -1,2 +1,6 @@
 with-compiler: ghc-9.4.2
 packages: .
+optimization: 2
+profiling: True
+library-profiling: True
+profiling-detail: all
