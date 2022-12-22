@@ -15,6 +15,11 @@ move (py, px) D = (py + 1, px)
 move (py, px) L = (py, px - 1)
 move (py, px) R = (py, px + 1)
 
+turnLeft :: Direction -> Direction 
+turnLeft U = L; turnLeft L = D; turnLeft D = R; turnLeft R = U 
+turnRight :: Direction -> Direction 
+turnRight = turnLeft . turnLeft . turnLeft
+
 inBounds :: ((Int, Int), (Int, Int)) -> (Int, Int) -> Bool 
 inBounds ((ly, lx), (uy, ux)) (y, x) = lx <= x && x <= ux && ly <= y && y <= uy
 
