@@ -4,7 +4,7 @@ import Data.Array
 import Data.Function
 
 type Position = (Int, Int)
-data Direction = R | U | L | D deriving (Eq, Show, Read, Enum, Bounded)
+data Direction = R | U | L | D deriving (Eq, Ord, Show, Read, Enum, Bounded)
 
 allDirs :: [Direction]
 allDirs = [minBound..maxBound]
